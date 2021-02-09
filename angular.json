@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularQRCodeReader"
+    }
+  },
+  "defaultProject": "AngularQRCodeReader",
+  "cli": {
+    "analytics": false
+  }
 }
