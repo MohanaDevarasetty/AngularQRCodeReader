@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-12" style="padding-left: 400px;padding-right: 400px;">
+        <div>
+            <div>
+                <div>
+                    <h3>
+                        QR Code Scanner
+                    </h3>
+                </div>
+            </div>
+            <div>
+                <zxing-scanner *ngIf="scanning" (scanSuccess)="scanningHandler($event)">
+                </zxing-scanner>
+                <button (click)="enableScanner()" *ngIf="!scanning" type="button"
+                    class="btn btn-success">Re Scan</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12" style="padding-left: 400px;padding-right: 400px;">
+        <div class="">
+            <div>
+                <div class="">
+                    <div>
+                        <h3 class="">Result</h3>
+                        <h3 class="">
+                            {{information}}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
